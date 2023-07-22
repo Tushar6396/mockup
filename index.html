@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <div class="main">
+        <div class="side-panel">
+            <div class="search-icon">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </div>
+            <div class="mid-icons">
+                <span class="material-symbols-outlined active">
+                    home
+                </span>
+                <span class="material-symbols-outlined">
+                    full_coverage
+                </span>
+                <span class="material-symbols-outlined">
+                    list_alt
+                </span>
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+            </div>
+            <div class="lower-icons">
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+                <span class="material-symbols-outlined">
+                    logout
+                </span>
+            </div>
+        </div>
+
+        <div class="account-section">
+            <div class="profile">
+                <div class="profile-image">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                </div>
+                
+                <div class="profile-name">
+                    <h1>Hii Mike,</h1>
+                    <span>welcome back</span>
+                </div>   
+
+            </div>
+
+            <div class="account-details">
+                <p>Today</p>
+                <div class="account-balance">
+                    
+                    <h1>$19,892</h1>
+                    <span>Account Balance</span>
+                </div>
+                <div class="balance-details">
+                    <h3>$4000</h3>
+                    <span>Year-to-Date Contributions</span>
+                </div>
+                <div class="balance-details">
+                    <h3>$1892</h3>
+                    <span>Total Interest</span>
+                </div>
+                <button>I want to</button>
+            </div>
+
+            <div class="recent-transactions">
+                <h3>Recent Transactions</h3>
+                <div class="transaction">
+                    <span>2020-08-07</span>
+                    <p>Withdrawal Transaction to Bank-XXX11</p>
+                </div>
+                <div class="transaction">
+                    <span>2020-07-21</span>
+                    <p>Withdrawal Transaction to Bank-XXX11</p>
+                </div>
+                <div class="transaction">
+                    <span>2020-07-16</span>
+                    <p>Withdrawal Transaction to Bank-XXX11</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="mid-section">
+            <div class="retirement-section">
+                <div class="details">
+                    <h3>Retirement Income</h3>
+                    <h2>Starting Year 2056</h2>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <h2>$300000</h2>
+                        <span>My Goal</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="stat">
+                        <h2>59%</h2>
+                        <span>Goal Acheived</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="stat">
+                        <h2>$300</h2>
+                        <span>Est. Monthly Income</span>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart">
+                <p>Contributions Overtime</p>
+                <div class="canvas">
+                    <canvas id="myChart"></canvas>
+                    <script>
+                        const ctx = document.getElementById('myChart');
+
+                        new Chart(ctx, {
+                            type: 'bar',
+                            data: {
+                                labels: ['20','' , '25', '', '30', '', '35','' , '40','' , '60', '', '65'],
+                                datasets: [{
+                                    label: 'Employer K 73500',
+                                    data: [75, 90, 100,110,125,150,175,195,210,230,265,290,310],
+                                    borderWidth: 1,
+                                    backgroundColor: ['rgb(74, 46, 202)', 'rgb(89, 56, 238)']
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    y: {
+                                        beginAtZero: true
+                                    }
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <div class="peers">
+                <h3>How do I compare to my peers</h3>
+                <span>These numbers represent current goal acheivement</span>
+                <div class="stat-progress-container">
+                    <div class="genres">
+                        <div class="genre">
+                            <span>Age: </span>
+                            <span>Under 30</span>
+                        </div>
+                        <div class="genre">
+                            <span>Salary: </span>
+                            <span>k 20 - k 30</span>
+                        </div>
+                        <div class="genre">
+                            <span>Gender: </span>
+                            <span>Male</span>
+                        </div>
+                    </div>
+
+                    <div class="progress-container-main">
+                        <div class="progress-container">
+                            <div class="circular-progress">
+                                <div class="progress-value">75%</div>
+                            </div>              
+                        </div>
+
+                        <div class="progress-container">
+                            <div class="circular-progress2">
+                                <div class="progress-value">95%</div>
+                            </div>
+                        </div>
+
+                        <div class="progress-container">
+                            <div class="circular-progress3">
+                                <div class="progress-value">59%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="end-section">
+            <div class="retirement">
+                <h3>Retirement Strategy</h3>
+                <div class="seekbaars">
+                    <p>Employee Contribution</p>
+                    <div class="container">
+                        <div class="seek contribution"></div>
+                        
+                    </div>
+                </div>
+                <div class="seekbaars">
+                    <p>Retirement Age</p>
+                    <div class="container">
+                        <div class="seek age"></div>
+                    </div>
+                </div>
+                <div class="line-gray"></div>
+                <div class="employee-data">
+                    <div class="contribution-flex">
+                        <span> Employer Contribution </span> <span>8.4%</span>
+                    </div>
+                   <div class="interest-flex">
+                        <span> Interest Rate </span> <span>5%</span>
+                   </div>
+                    
+                </div>
+                <button>Update</button>
+                <p class="purple-line">
+                    View Help Docs >
+                </p>
+            </div>
+            <div class="finance-section">
+                <div class="line-purple"></div>
+                <div class="text">
+                    <h3>Are you considering a</h3>
+                    <p>Housing Advance?</p>
+                    <span>Limited time reduced interest</span>
+                    <h4>Learn More > </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
